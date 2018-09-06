@@ -13,8 +13,10 @@ class CreateBlogsTable extends Migration
      */
     public function up()
     {
-        Schema::create('_blogs', function (Blueprint $table) {
+        Schema::create('blogs', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('titre');
+            $table->text('texte');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateBlogsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_blogs');
+        Schema::dropIfExists('blogs');
     }
 }
