@@ -18,5 +18,16 @@ class blogTableSeeder extends Seeder
     public function run()
     {
         DB::table('blogs')->delete();
+
+        for (i=0;i<20;i++) {
+        	$date=$this->datealeatoire();
+        	DB::table('blogs')->insert([
+
+        	'created_at'=>$date,
+        	'updated_at'=>$date
+
+
+        	]);
+        }
     }
 }
