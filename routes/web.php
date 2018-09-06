@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('ounoustrouver', function () {
+    return ('ou nous trouver');
+});
