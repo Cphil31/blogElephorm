@@ -17,6 +17,6 @@ class blogTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('blogs')->delete();
     }
 }
