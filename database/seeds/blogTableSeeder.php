@@ -19,10 +19,14 @@ class blogTableSeeder extends Seeder
     {
         DB::table('blogs')->delete();
 
+        $faker = Faker\Factory::create();
+
         for (i=0;i<20;i++) {
         	$date=$this->datealeatoire();
         	DB::table('blogs')->insert([
 
+        	'titre'=> text(),
+        	'texte'=> text(),	
         	'created_at'=>$date,
         	'updated_at'=>$date
 
