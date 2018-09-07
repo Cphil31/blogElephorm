@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'BlogController@index');
 
 Route::get('ounoustrouver', function () {
     return ('ou nous trouver');
@@ -21,4 +19,7 @@ Route::get('ounoustrouver', function () {
 
 Route::get('/home', function () {
     return view('child');
+});
+Route::get('/welcome', function () {
+    return view('welcome');
 });
