@@ -18,6 +18,7 @@ class CreateBlogsTable extends Migration
             $table->string('titre');
             $table->text('texte');
             $table->integer('categorie_id')->unsigned->nullable();
+            $table->foreign('categorie_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }
