@@ -10,12 +10,11 @@
 
 @section('content')
     <div class="titre">Page d'acceuil</div>
-
-    @foreach($blog as $blog)
-
-    <p>{{$blog->id}}</p>
-    <p>{{$blog->titre}}</p>
-    <p>{{$blog->texte}}</p>
-
-    @endforeach
+	<Div class="articles">
+	    @foreach($blog as $blog)
+		    <p>N°{{$blog->id}} Titre : {{$blog->titre}}</p>
+		    <blockquote>{{$blog->texte}}</blockquote>
+		<br>
+    	@endforeach
+	</Div>
 @endsection

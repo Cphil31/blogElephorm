@@ -1,5 +1,11 @@
 .titre{
 	text-align: center;
-	font-size: 3em;
+	font-size: 5em;
 	color: red;
+}
+.articles{
+	margin-left: 25%;
+	width: 50%;
+	font-size: 2em;
+	color: Blue;
 }
