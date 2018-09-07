@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('ounoustrouver', function () {
     return ('ou nous trouver');
 });
+
+Route::get('/home', function () {
+    return view('child');
+});
