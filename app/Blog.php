@@ -12,3 +12,4 @@ class Blog extends Model
     	return $this->BelongsTo('App/Categorie');
     }
 }
+
