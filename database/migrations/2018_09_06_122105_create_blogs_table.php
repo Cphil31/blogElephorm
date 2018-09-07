@@ -17,6 +17,7 @@ class CreateBlogsTable extends Migration
             $table->increments('id');
             $table->string('titre');
             $table->text('texte');
+            $table->integer('categorie_id')->unsigned->nullable();
             $table->timestamps();
         });
     }
